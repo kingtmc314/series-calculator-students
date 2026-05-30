@@ -1,0 +1,941 @@
+\documentclass[12pt, a4paper]{article} % 'article' class prevents automatic blank pages
+
+\usepackage[margin=1in]{geometry} % Adjusts margins to be more readable
+\usepackage{graphicx} % Required for inserting images
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsfonts}
+\usepackage{amsthm}
+\usepackage{enumitem}
+\usepackage{tikz}
+\usetikzlibrary{angles, quotes}
+\usetikzlibrary{patterns, arrows.meta}
+
+% --- SPACING CONFIGURATION ---
+% Automatically adds 1.5cm of vertical space between main questions (level 1 enumerate)
+% Sub-questions (level 2) will remain normally spaced.
+\setlist[enumerate,1]{itemsep=1.5cm}
+
+% Define the \qmarks command
+\newcommand{\qmarks}[1]{\leavevmode\unskip\hspace*{\fill}\mbox{(#1 marks)}}
+
+\title{M2 Question Bank}
+\author{Ming Chi Tse}
+\date{May 2026}
+
+\begin{document}
+
+\maketitle
+\newpage % Forces the Table of Contents to start on the very next page
+
+% Adds a table of contents automatically
+\tableofcontents 
+\newpage % Forces the questions to start on the very next page
+
+% --- ALGEBRA PART ---
+\part{Foundation}
+\section{Mathematical Induction}
+
+\begin{enumerate}
+    \item Using mathematical induction, prove that \(\displaystyle \sum_{k=1}^n\frac{1}{(k+2)k!}=\frac{1}{2}-\frac{1}{(n+2)!}\) for all positive integers \(n\). \qmarks{5}
+    
+    \item \begin{enumerate}
+        \item Using mathematical induction, prove that \(\displaystyle \sum_{r=1}^n(-1)^rr^2=(-1)^n\frac{n(n+1)}{2}\) for all positive integers \(n\).
+        \item Using (a), evaluate \(1001^2-1002^2+1003^2-\cdots+1999^2-2000^2\).
+    \end{enumerate}\qmarks{6}
+
+    \item \begin{enumerate}
+        \item Using mathematical induction, prove that \(\displaystyle \sum_{r=1}^n\frac{(-1)^{r+1}(3r+1)2^r}{r(r+1)}=2+\frac{(-2)^{n+1}}{n+1}\) for all positive integers \(n\).
+        \item Evaluate \(\displaystyle \sum_{r=800}^{999}\frac{(-1)^{r+1}(3r+1)2^{r-799}}{r(r+1)}\).
+    \end{enumerate}\qmarks{7}
+
+    \item \begin{enumerate}
+        \item Using mathematical induction, prove that \(\displaystyle \sum_{k=1}^{2n}\frac{(-1)^{k-1}(k+1)}{(2k+1)(2k+3)}=\frac{n}{3(4n+3)}\) for all positive integers \(n\).
+        \item Using (a), evaluate \(\displaystyle \sum_{k=1}^{101}\frac{(-1)^{k-1}(k+1)}{(2k+1)(2k+3)}=\frac{n}{3(4n+3)}\).
+    \end{enumerate}\qmarks{7}
+
+    \item \begin{enumerate}
+        \item Using mathematical induction, prove that \(\displaystyle \sum_{k=1}^{2n}k^3=n^2(2n+1)^2\) for all positive integers \(n\).
+        \item Using (a), evaluate \(\displaystyle \sum_{k=1}^{22}(2k-1)^3\).
+    \end{enumerate}\qmarks{8}
+    
+\end{enumerate}
+
+\newpage
+
+\section{Binomial Theorem}
+\begin{enumerate}
+    \item Let \(n\) be a positive integer. The coefficient of \(x^2\) in the expansion of \((1+2x)^n(1-5x)^2\) is 
+    \(-31\). Find
+    \begin{enumerate}
+        \item \(n\),
+        \item the coefficient of \(x^2\) in the expansion.
+    \end{enumerate} \qmarks{5}
+    \item Let \(a\) be a positive constant. If the coefficient  of \(x^4\) in the expansion of\\
+    \(\displaystyle (x-a)^6\bigg(3+\frac{1}{x^2}\bigg)^3\) is \(2\,052\), find \(a\) and the constant term in the expansion.\\
+    \, \qmarks{5}
+    
+    \item Let \(a\) be a constant. If the coefficient of \(x^7\) in the expansion of \\
+    \(\displaystyle (1+ax)^2\bigg(2x-\frac{1}{2x}\bigg)^5\) is \(800\), find \(a\) and the constant term in the expansion. \qmarks{5}
+
+    \item Let \(n\) be a positive integer.
+        \begin{enumerate}
+            \item Expand \((1-x^2)^n\) in ascending powers of \(x\) up to the term of \(x^4\).
+            \item If the coefficient of \(x^2\) in the expansion of \(\displaystyle (1-x^2)^n\bigg(x-\frac{3}{x}\bigg)^2\) is \(301\), find \(n\).
+        \end{enumerate}\qmarks{5}
+
+
+    \item \begin{enumerate}
+        \item Expand \((1-ax)^6\) in ascending powers of \(x\) up to the \(x^3\) term.
+        \item If the coefficient of \(x^2\) in the expansion of \((1-ax)^6(1-x+3x^2)\) is \(75\), find the value(s) of \(a\).
+    \end{enumerate}\qmarks{5}
+\end{enumerate}
+\newpage
+
+\section{Trigonometry}
+\begin{enumerate}
+    \item
+    \begin{enumerate}
+        \item Prove that \(\sin 2\theta \sin 3\theta=\sin\theta(\sin2\theta+\sin4\theta)\).
+        \item Suppose that \(\displaystyle 0<x<\frac{\pi}{4}\) and \(\csc x=\csc 2x+\csc 3x\). Using (a), or otherwise, find the value of \(x\).
+    \end{enumerate} \qmarks{5}
+
+    \item \begin{enumerate}
+        \item Let \(\displaystyle \frac{3\pi}{4}<x<\pi\). Prove that \(\cot x-\tan x=2\cot 2x\).
+        \item Solve the equation \(\cot \theta + 8\sqrt{3} = \tan \theta+2\tan 2\theta+4\tan 4\theta\), where \(\displaystyle \frac{3\pi}{16}<x<\frac{\pi}{4}\).
+    \end{enumerate} \qmarks{5}
+
+    \item Let \(\displaystyle \frac{\pi}{4}<\theta<\frac{\pi}{2}\).
+    \begin{enumerate}
+        \item Prove that \(\sin^23\theta-\sin^2\theta=\sin4\theta\sin2\theta\).
+        \item Solve the equation \(\sin^23\theta-\sin^2\theta=\cos4\theta\cos2\theta\).
+    \end{enumerate}\qmarks{5}
+
+    \item \begin{enumerate}
+        \item Prove that \(\displaystyle \tan\bigg(x+\frac{\pi}{4}\bigg)+\tan\bigg(x-\frac{\pi}{4}\bigg)=2\tan 2x\).
+        \item Solve \(\displaystyle \tan\bigg(x+\frac{\pi}{4}\bigg)+\tan\bigg(x-\frac{\pi}{4}\bigg)=2\sqrt{3}\) \,for\, \(\displaystyle \frac{\pi}{3}\leq x \leq \frac{4\pi}{3}\).
+    \end{enumerate}\qmarks{5}
+
+    \item \begin{enumerate}
+        \item Prove that
+            \begin{enumerate}[label=(\roman*)]
+                \item \(\cos^2x+\cos^22x=1+\cos x\cos 3x\),
+                \item \(\cos^2x+\cos^22x+\cos^23x=1+2\cos x\cos2x\cos3x\).
+            \end{enumerate}
+        \item Solve the equation \(\displaystyle \cos^2\frac{\theta}{2}+\cos^2\theta+\cos^2\frac{3\theta}{2}=1\), where \(\displaystyle 0 \leq \theta \leq \frac{\pi}{2}\).
+    \end{enumerate} \qmarks{6}
+
+    
+\end{enumerate}
+\newpage
+
+% --- CALCULUS PART ---
+\part{Calculus}
+
+\section{First Principles}
+\begin{enumerate}
+    \item
+    Let \(\displaystyle y=e^{-2x}\). Find \(\displaystyle \frac{\mathrm{d}y}{\mathrm{d}x}\) from first principles. 
+    \qmarks{3}
+    \item Let \(\displaystyle \mathrm{f}(x)=e^x\cos{\frac{x}{2}}\).
+    \begin{enumerate}
+        \item If \(\displaystyle \mathrm{f}(\pi+h)-\mathrm{f}(\pi)=e^{\pi}\mathrm{g}(h)\), find \(\mathrm{g}(h)\).
+        \item Using (a), find \(\mathrm{f}'(\pi)\) from first principles.
+    \end{enumerate} \qmarks{5}
+
+    \item Let \(\displaystyle \mathrm{g}(x)=\frac{\cos x}{\sqrt{4x^2-4\pi x+2\pi^2}}\).
+    \begin{enumerate}
+        \item Prove that \(\displaystyle \mathrm{g}\bigg(\frac{\pi}{2}+h\bigg)=\frac{-\sin{h}}{\sqrt{4h^2+\pi^2}}\).
+        \item Hence, find \(\displaystyle \mathrm{g}'\bigg(\frac{\pi}{2}\bigg)\) from first principles.
+    \end{enumerate} \qmarks{5}
+
+    \item Let \(\displaystyle \mathrm{f}(x)=\cos kx\), where \(k \neq 0\). Find \(\displaystyle \mathrm{f}'\bigg(\frac{\pi}{2k}\bigg)\) from first principles. \qmarks{4}
+
+    \item Let \(k\) be a non-zero real constant and \(\displaystyle \mathrm{f}(x)=\frac{\sin kx}{k^2}\). Find \(\displaystyle \mathrm{f}'\bigg(\frac{\pi}{k}\bigg)\) from first principles. \qmarks{5}
+    
+\end{enumerate}
+\newpage
+
+\section{Differentiation and Tangents}
+\begin{enumerate}
+    \item Let \(\varGamma\) be the curve \(2x^2-4xy+5y^2=30\).
+    \begin{enumerate}\item Find \(\displaystyle \frac{\mathrm{d}y}{\mathrm{d}x}\) in terms of \(x\) and \(y\).
+    \item Someone claims that there are two tangents to \(\varGamma\) from the point \((-3,-4)\). Do you agree? Explain your answer.
+    \end{enumerate}\qmarks{5}
+\end{enumerate}
+\newpage
+
+\section{Curve Sketching}
+\begin{enumerate}
+    \item Define \(\displaystyle \mathrm{f}(x)=\frac{1+5x-2x^2}{2x+1}\) for all real numbers \(\displaystyle x \neq -\frac{1}{2}\).
+    \begin{enumerate}
+        \item Find the range of values of \(x\) such that the graph of \(y=\mathrm{f}(x)\) is concave upward.
+        \item Find the asymptote(s) of the graph of \(y=\mathrm{f}(x)\).
+    \end{enumerate} \qmarks{6}
+    
+    \item Let \(\displaystyle \mathrm{f}(x)=\ln{(x^2-2x+5)}\). Denote the graph of \(y=\mathrm{f}(x)\) by \(\varGamma\).
+    \begin{enumerate}
+        \item Find \(\mathrm{f}'(x)\) and \(\mathrm{f}''(x)\).
+        \item Find the range of values of \(x\) such that \(\varGamma\) is concave upward.
+        \item Some one claims that there are two points of inflexion of \(\varGamma\). Do you  agree? Explain your answer.
+    \end{enumerate}\qmarks{7}
+    
+    \item Define \(\displaystyle \mathrm{f}(x)=x^2e^{\frac{-x^3}{3}}\) for all \(x \in \mathbf{R}\). Denote the graph of \(y=\mathrm{f}(x)\) by \(G\).
+    \begin{enumerate}
+        \item Find \(\mathrm{f}'(x)\) and \(\mathrm{f}''(x)\). \qmarks{3}
+        \item Find the maximum point(s) and minimum point(s) of \(G\). \qmarks{3}
+        \item Let \(L\) be the tangent to \(G\) at the point where \(x=1\).
+        \begin{enumerate}[label=(\roman*)]
+            \item Find the equation of \(L\).
+            \item If \(\mathrm{f}''(x)>0\) in the interval \((0,\alpha)\), find the greatest value of \(\alpha^3\).
+            \item Find the area of the region bounded by \(G\) and \(L\).
+        \end{enumerate} \qmarks{7}
+    \end{enumerate}
+
+    \item Define \(\displaystyle \mathrm{f}(x)=\frac{3x^3+7x^2+3x}{3x^2+4x+2}\), for all \(x\in \mathbf{R}\). Denote the graph of \(y=\mathrm{f}(x)\) by \(G\).
+    \begin{enumerate}
+        \item Find the asymptote(s) of \(G\). \qmarks{2}
+        \item Suppose \(\displaystyle \mathrm{f}'(x)=\frac{(3x^2+4x+6)\mathrm{h}'(x)}{(3x^2+4x+2)^2}\).  Find \(\mathrm{h}(x)\). \qmarks{2}
+        \item Find the maximum point(s) and the minimum point(s) of \(G\).  \qmarks{3}
+        \item Sketch \(G\). \qmarks{3}
+        \item Find the area of the region bounded by \(G\) and the straight line \(y=1\).   \qmarks{3}
+    \end{enumerate}
+
+    \item Let \(\displaystyle \mathrm{f}(x)=\frac{x^2-x-2}{x-3}\), where \(x\neq3\). Denote the graph of \(y=\mathrm{f}(x)\) by \(H\).
+    \begin{enumerate}
+        \item Find the asymptote(s) of \(H\). \qmarks{3}
+        \item Find the maximum point(s) and minimum point(s) of \(H\). \qmarks{4}
+        \item Let \(c\) be a real constant. If \(y=-3x+c\) is a tangent to \(H\) at \(P\), find the possible coordinates of \(P\). \qmarks{2}
+        \item Consider \(H\) for \(x \geq4\). Let \(R\) be the region bounded by \(H\), the tangent to \(H\) at \(P\) and the straight line \(x=6\). Find the area of \(R\). \qmarks{3}
+    \end{enumerate}
+
+    \item Let \(\displaystyle \mathrm{r}(x)=\frac{x^2-4x-4}{x+1}\), where \(x \neq -1\). Denote the graph of \(y=\mathrm{r}(x)\) by \(H\).
+    \begin{enumerate}
+        \item Find the asymptote(s) of \(H\). \qmarks{3}
+        \item Find the maximum point(s) and minimum point(s) of \(H\). \qmarks{4}
+        \item \begin{enumerate}[label=(\roman*)]
+            \item Someone claims that the concavity of \(H\) is the same for all real numbers \(x \neq -1\). Do you agree? Explain your answer.
+            \item Are there any points of inflexion of \(H\)? Explain your answer.
+        \end{enumerate}\qmarks{3}
+        \item \(P(x,y)\) is a variable point moving along \(H\) such that \(x\) is increasing at a rate of \(2 \, \mathrm{s}^{-1}\). Find the rate of change of \(OP^2\) when \(x=3\). \qmarks{3}
+    \end{enumerate}
+\end{enumerate}
+\newpage
+
+\section{Rate of Change}
+\begin{enumerate}
+    \item The coordinates of \(Q\) is \((5,5)\). The point \(P\), in the first quadrant, moves upward along the curve \(\displaystyle y=\sqrt{x^2+100}\), where \(x>5\). \(R\) is the foot of perpendicular of \(P\) on the \(x\)-axis. The area of \(\triangle PQR\) increases at a constant rate of \(566\) square units per second.
+    \begin{enumerate}
+        \item Find the rate of change of \(OR=24\) units.
+        \item Let \(\angle POR=\theta\) radians. Using the result of (a), find the rate of change of \(\theta\) when \(OR=24\) units.
+    \end{enumerate} \qmarks{7}
+
+    \item Two rods \(OP\) and \(PA\) are hinged at \(P\). \(OP\) is hinged on a horizontal rail \(OX\) at \(O\). The end \(O\) is fixed while the end \(A\) is free to slide on the rail. It is given that \(OP=17 \mathrm{\,m}\) and \(PA=113\mathrm{\, m}\). \(A\) is pushed towards \(O\) along the rail at a constant speed of \(0.125 \mathrm{\, m\,s}^{-1}\). The following figure shows the positions of \(P\) and \(A\) after \(t\) seconds. Let \(\angle POA=\theta\) radians and \(\angle PAO=\phi \) radians.
+    \begin{center}
+    \begin{tikzpicture}[scale=1.2]
+    % Define coordinates
+    \coordinate (O) at (0,0);
+    \coordinate (A) at (6,0);
+    \coordinate (X) at (8,0);
+    \coordinate (P) at (3.5, 2.5);
+
+    % Draw the lines
+    \draw[thick] (O) -- (X);
+    \draw[thick] (O) -- (P) -- (A);
+
+    % Add the labels for the vertices
+    \node[below left] at (O) {\(O\)};
+    \node[below] at (A) {\(A\)};
+    \node[below] at (X) {\(X\)};
+    \node[above right] at (P) {\(P\)};
+
+    % Draw and label the angles
+    \pic [draw, thick, angle radius=1cm, angle eccentricity=1.4, "\(\theta\)"] {angle = A--O--P};
+    \pic [draw, thick, angle radius=1cm, angle eccentricity=1.4, "\(\phi\)"] {angle = P--A--O};
+
+    \end{tikzpicture}
+    \end{center}
+    \begin{enumerate}
+        \item By expressing \(OA\) in terms of \(\theta\) and \(\phi\), or otherwise, prove that\\ \(\displaystyle \frac{\mathrm{d}\theta}{\mathrm{d}t} + \frac{\mathrm{d}\phi}{\mathrm{d}t}=\frac{1}{136\sin \theta}\).
+        \item Initially, \(\theta=0\). After \(80\) seconds, find
+        \begin{enumerate}[label=(\arabic*)]
+            \item the perpendicular distance of \(P\) from the rail \(OX\),
+            \item the rate of change of \(\theta\).
+        \end{enumerate}
+    \end{enumerate}\qmarks{7}
+
+    \item \begin{enumerate}
+        \item Initially, a cylindrical metal rod of base radius 1 cm and height 100 cm is held vertically at the bottom of a container of height 80 cm. Water is poured into the container until it is full. The metal rod is pulled out vertically from the water. After \(t\) seconds, the length of the immersed part of the metal rod is \(z\) cm. Suppose the total volume of the water and the immersed part of the metal rod is \(V \,\mathrm{cm}^3\).
+        \newline
+        Prove that \(\displaystyle \frac{\mathrm{d}V}{\mathrm{d}t}=\pi\frac{\mathrm{d}z}{\mathrm{d}t}\). \qmarks{2}
+    \end{enumerate}
+\end{enumerate}
+
+\newpage
+
+% --- LINEAR ALGEBRA PART ---
+\part{Linear Algebra}
+\section{Matrices}
+\begin{enumerate}
+    \item Let \(\displaystyle A=
+    \begin{pmatrix}
+        2&-1\\
+        1&1
+    \end{pmatrix}\) and \(\displaystyle B=
+    \begin{pmatrix}
+        5&4\\
+        2&3
+    \end{pmatrix}\).
+    \begin{enumerate}
+        \item Evaluate \(A^2\), \(A^6\) and \(A^{-1}BA\).   \qmarks{4}
+        \item Find \(B^n\), where \(n\) is a positive integer. \qmarks{3}
+        \item Do there exist a positive integer \(k\) such that \((A^{-1})^{6k}B^{6k}A^{6k}=(A^{-1}BA)^{6k}\)? Explain your answer. \qmarks{3}
+        \item Evaluate \(A^{2027}B^{2027}(A^{-1})^{2027}\) \qmarks{3}
+    \end{enumerate}
+
+    \item Let \(n\) be a positive integer.
+    \begin{enumerate}
+        \item Suppose \(\alpha\) and \(\beta\) are two non-zero real numbers such that \\
+        \(x^n \equiv \mathrm{Q}(x)(x^2-2x-15)+\alpha x+\beta\), where \(\mathrm{Q}(x)\) is a polynomial with real coefficients. Find \(\alpha\) and \(\beta\) in terms of \(n\).    \qmarks{2}
+        \item Let \(A=\begin{pmatrix}
+            3&6\\
+            2&-1
+        \end{pmatrix}\) and \(\displaystyle B=\frac{1}{2}\begin{pmatrix}
+            9&3\\1&7
+        \end{pmatrix}\).
+        \begin{enumerate}[label=(\roman*)]
+            \item Evaluate \(A-15A^{-1}\), \(A^2\) and \(B^2\).
+            \item Do there exist only \(2\) distinct real matrices \(M\) satisfying \(M^2=A^2\)? Explain your answer.
+            \item By considering the algebraic identity in (a), find \(A^n\). 
+            \item Find \((A^{-1})^{2025}B^{2027}\).
+        \end{enumerate}\qmarks{11}
+    \end{enumerate}
+
+    \item Let \(\displaystyle A=\begin{pmatrix}
+        2&-3\\
+        5&10
+    \end{pmatrix}\) and \(X\) be a non-zero \(2\times1\) real matrix such that \(AX=\lambda X\), where \(\lambda\) is a real number. Denote the \(2\times2\) identity matrix by \(I\).
+    \begin{enumerate}
+        \item By considering a system of linear equations, prove that \(|A-\lambda I|=0\).\\
+        Hence, find \(\lambda\). \qmarks{3}
+        \item Let \(P\) be a non-singular matrix such that \(B=P^{-1}AP\), where \(\displaystyle B=\begin{pmatrix}
+            \alpha&0\\
+            0&\beta
+        \end{pmatrix}\) and \(\alpha>\beta\).
+        \begin{enumerate}[label=(\roman*)]
+            \item Someone claims that there is a non-zero \(2\times1\) real matrix \(Y\) such that \(BY=\lambda Y\). Do you  agree? Explain your answer.
+            \item Find \(\alpha\) and \(\beta\).
+            \item Suppose that \(\displaystyle P=\begin{pmatrix}
+                -3&a\\
+                b&1
+            \end{pmatrix}\), where \(ab \neq-3\). Find \(a\) and \(b\).
+        \end{enumerate}\qmarks{6}
+        \item Evaluate \(\displaystyle \begin{pmatrix}
+            2&-3\\
+            5&10
+        \end{pmatrix}^{666}\). \qmarks{4}
+    \end{enumerate}
+
+    \item Denote the \(2\times2\) identity matrix by \(I\).
+    \begin{enumerate}
+        \item Let \(J=\begin{pmatrix}
+            \lambda&1\\0&\lambda
+        \end{pmatrix}\), where \(\lambda\in\mathbf{R}\), and \(N\) be a \(2\times2\) real matrix.
+        \begin{enumerate}[label=(\roman*)]
+            \item If \(J=\lambda I+N\), prove that \(N^2=\mathbf{0}\).
+            \item Prove that \(J^n=\begin{pmatrix}
+                \lambda^n & n\lambda^{n-1}\\0&\lambda^n
+            \end{pmatrix}\) for any positive integer \(n\).
+        \end{enumerate}\qmarks{4}
+        \item Let \(A=\begin{pmatrix}
+            1&3\\-3&7
+        \end{pmatrix}\) and \(\mu\in\mathbf{R}\) such that \(|A-\mu I|=0\).
+        \begin{enumerate}[label=(\roman*)]
+            \item Find \(\mu\).
+            \item Suppose \((A-\mu I)\begin{pmatrix}1\\0\end{pmatrix}=\begin{pmatrix}x_1\\x_2\end{pmatrix}\), where \(x_1,x_2\in\mathbf{R}\). Let \(Q=\begin{pmatrix}
+                x_1&1\\x_2&0
+            \end{pmatrix}\) be a non-singular matrix and \(P=Q^{-1}AQ\).
+            \begin{enumerate}[label=(\arabic*)]
+                \item Find \(P\).
+                \item Evaluate \(A^100\).
+            \end{enumerate}
+        \end{enumerate}\qmarks{7}
+    \end{enumerate}
+
+    \item Let \(A(\theta)=\begin{pmatrix}
+        \cos\theta & -\sin\theta\\
+        \sin\theta & \cos\theta
+    \end{pmatrix}\), where \(\theta\) is real.
+    \begin{enumerate}
+        \item Prove that
+            \begin{enumerate}[label=(\roman*)]
+                \item \(A(\theta)\) is non-singular and \([A(\theta)]^{-1}=A(-\theta)\);
+                \item \(A(\alpha)A(\beta)=A(\alpha+\beta)\), where \(\alpha\) and \(\beta\) are real;
+                \item \([A(\theta)]^n=A(n\theta)\)for all positive integers \(n\) by mathematical induction.
+            \end{enumerate}\qmarks{6}
+        \item Let \(X\) and \(Y\) be two square matrices of the same order and \(XY=YX\). It is given that for all positive integers \(n\), \(\displaystyle (X+Y)^n=\sum_{k=0}^nC_k^nX^{n-k}Y^k\), where \(X^0\) and \(Y^0\) are by definition the identity matrix. By considering \( \lbrace A(\theta)+[A(\theta)]^{-1} \rbrace^n\), prove that \(\displaystyle \sum_{k=0}^nC_k^nA\big((n-2k)\theta\big)=\begin{pmatrix}
+            2^n\cos^n\theta & 0\\
+            0 & 2^n\cos^n\theta
+        \end{pmatrix}\) for all positive integers \(n\). \qmarks{4}
+        \item Using (b), evaluate 
+        \begin{enumerate}[label=(\roman*)]
+            \item \(\displaystyle 16\cos^5\frac{\pi}{20}-10\cos\frac{\pi}{20}-5\cos\frac{3\pi}{20}\);
+            \item \(\displaystyle \int_0^{\frac{\pi}{3}}\cos^5\theta \mathrm{d}\theta\).
+        \end{enumerate}
+    \end{enumerate}\qmarks{4}
+\end{enumerate}
+\newpage
+
+\section{System of Linear Equations}
+\begin{enumerate}
+    \item Consider the following system of linear equations in real variables \(x\), \(y\) and \(z\) 
+    \[
+        (E): \left\{
+        \begin{array}{ccccccc}
+             x & + & y & + & 5z & = & 1 \\
+            3x & + & y & + & 2z & = & 2 \\
+            ax &   &   & - &  z & = & b
+        \end{array}
+        \right.
+        \quad \text{, where } a, b \in \mathbf{R}.
+    \]
+    Assume that \((E)\) has infinitely many solutions.
+    \begin{enumerate}
+        \item Find \(a\).
+        \item Solve \((E)\).
+    \end{enumerate} \qmarks{7}
+
+    \item Consider the system of linear equations in real unknowns \(x\), \(y\), \(z\)
+    \[
+        (E): \left\{
+        \begin{array}{ccccccc}
+             x & +  & y  & - & z  & = & a \\
+            (1-k)x & - & y & + & (k-1)z & = & 2-a \\
+            (k-1)^2x & +  & y  & + & (1-k)z  & = & a-2
+        \end{array}
+        \right.
+        \quad \text{, where } a,\, k \in \mathbf{R}.
+    \]
+    It is given that \((E)\) has infinitely many solutions.
+    \begin{enumerate}
+        \item Find \(k\). Hence, solve \((E)\).
+        \item Suppose \(a \geq 2\). Someone claims that there are infinitely many real solutions \((x,y,z)\) of \((E)\) satisfying \(x+y-4z^2=0\). Is the claim correct? Explain your answer.
+    \end{enumerate}\qmarks{8}
+
+    \item Consider the system of linear equations in real variables \(x\), \(y\) and \(z\)
+    \[
+        (E): \left\{
+        \begin{array}{ccccccc}
+             6x & +  & (3a+7)y  & + & 4z  & = & 3 \\
+            x & + & (a+1)y & - & z & = & 2-3b \\
+            x & +  & (a+3)y  & + & (2a+7)z  & = & b-3
+        \end{array}
+        \right.
+        \quad \text{, where } a,\, b \in \mathbf{R}.
+    \]
+    \begin{enumerate}
+        \item Assume that \((E)\) has a unique solution. Find the range of values of \(a\).
+        \item Assume that \(a\neq-3\) and \((E)\) is inconsistent. Find the range of values of \(b\).
+        \item Assume that \(a=-3\). If \((E)\) has infinitely many solutions, solve \((E)\).
+    \end{enumerate}\qmarks{8}
+
+    \item Consider the system of linear equations in real variables \(x\), \(y\) and \(z\)
+    \[
+        (E): \left\{
+        \begin{array}{ccccccc}
+             x &   &   & - & z  & = & \lambda x \\
+            -2x & + & 3y & - & z & = & \lambda y \\
+            -6x & +  & 6y  &  &   & = & \lambda z
+        \end{array}
+        \right.
+        \quad \text{, where } \lambda \in \mathbf{R}.
+    \]
+    Assume that \((E)\) has non-trivial solutions \((x_0, y_0, z_0)\).
+    \begin{enumerate}
+        \item \begin{enumerate}[label=(\roman*)]
+            \item Find \(\lambda\).
+            \item If \(\lambda>1\), solve \((E)\).
+        \end{enumerate}
+        \item Let \(B=\begin{pmatrix}
+            1&7&5
+        \end{pmatrix}\), \(A=\begin{pmatrix}
+            1&0&-1\\
+            -2&3&-1\\
+            -6&6&0
+        \end{pmatrix}\) and \(C=\begin{pmatrix}
+            -1\\0\\2
+        \end{pmatrix}\). Evaluate \(BA^{888}C\).
+    \end{enumerate}\qmarks{7}
+
+    \item Consider the system of linear equations in real unknowns \(x\), \(y\), \(z\)
+    \[
+        (E): \left\{
+        \begin{array}{ccccccc}
+             x &  + & y  & - & 2z  & = & 4 \\
+            3x & - & y & + & 2z & = & 4\\
+            2x & -  & 2y  & + & \lambda z  & = & a
+        \end{array}
+        \right.
+        \quad \text{, where } \lambda, a \in \mathbf{R}.
+    \]
+    \begin{enumerate}
+        \item Assume that \((E)\) has a unique solution.
+        \begin{enumerate}[label=(\roman*)]
+            \item Prove that \(\lambda \neq 4\).
+            \item Find \(x\).
+        \end{enumerate}
+        \item Assume that \(\lambda=4\) and \((E)\) is consistent.
+        \begin{enumerate}[label=(\roman*)]
+            \item Find \(a\).
+            \item Solve \((E)\).
+        \end{enumerate}
+    \end{enumerate} \qmarks{8}
+\end{enumerate}
+
+\newpage
+
+\section{Vectors : Dot Products}
+\begin{enumerate}
+    \item Let \(O\) be the origin. The position vector of \(A\) and \(B\) are \(\mathbf{a}\) and \(\mathbf{b}\) respectively. It is given that \(\mathbf{a}\) and \(\mathbf{b}\) are non-zero and non-parallel vectors. \(N\) is a point on \(OA\) such that \(ON:NA=2:3\). \(P\) is a point on \(BN\) such that \(BP:PN=r:1\), where \(r\) is a positive constant.
+    \begin{enumerate}
+        \item Express \(\overrightarrow{OP}\) in terms of \(r\), \(\mathbf{a}\) and \(\mathbf{b}\).
+        \item If \(OP\) produced meets \(AB\) at the mid-point of \(AB\), find \(r\).
+    \end{enumerate} \qmarks{5}
+
+    \item Let \(O\) be the origin. The position of \(A\), \(B\) and \(C\) are \(\mathbf{i}+\mathbf{j}\), \(3\mathbf{i}+6\mathbf{j}\) and \(\lambda \mathbf{i}+7\mathbf{j}\) respectively, where \(\lambda\) is a positive constant such that \(\angle AOC \neq 0\).
+    \begin{enumerate}
+        \item Find \(\overrightarrow{OA} \cdot \overrightarrow{OB}\).
+        \item If \(OB\) is the angle bisector of \(\angle AOC\), find \(\lambda\).
+    \end{enumerate}\qmarks{3}
+
+    \item \begin{enumerate}
+        \item Let \(\mathbf{u}\) and \(\mathbf{v}\) be two non-parallel non-zero vectors. \(\mathbf{w}\) is  a vector such that \(\mathbf{w}\cdot\mathbf{u}=\mathbf{w}\cdot\mathbf{v}=0\). If \(\mathbf{w}\) lies on the plane containing \(\mathbf{u}\) and \(\mathbf{v}\), prove that \(\mathbf{w}\) is a zero vector. \qmarks{3}
+        \item Consider \(\triangle ABC\). Denote the origin by \(O\). Let \(D\), \(G\) and \(H\) be the circumcentre, the centroid and the orthocentre of \(\triangle ABC\) respectively.\\
+        Let \(\overrightarrow{DA}=\mathbf{a}\), \(\overrightarrow{DB}=\mathbf{b}\) and \(\overrightarrow{DC}=\mathbf{c}\).
+        \begin{enumerate}[label=(\roman*)]
+            \item Let \(M\) be the mid-point of \(AB\). It is given that \(CG:GM=2:1\). Express \(\overrightarrow{DG}\) in terms of \(\mathbf{a}\), \(\mathbf{b}\) and \(\mathbf{c}\).
+            \item Let \(\mathbf{s}=\overrightarrow{DH}-\mathbf{a}-\mathbf{b}-\mathbf{c}\). Find \(\mathbf{s}\cdot\overrightarrow{AB}\) and \(\mathbf{s}\cdot\overrightarrow{BC}\).
+            \item It is given that \(\displaystyle \overrightarrow{OG}=3\mathbf{i}+\frac{\alpha}{3}\mathbf{j}+\bigg(1+\frac{\beta}{3}\bigg)\mathbf{k}\) and\\ \(\overrightarrow{DH}=18\mathbf{i}+(\alpha+48)\mathbf{j}+(66+\beta)\mathbf{k}\), where \(\alpha\) and \(\beta\) are real constants. 
+            \\Find \(\overrightarrow{OD}\).
+        \end{enumerate}
+    \end{enumerate}\qmarks{9}
+
+    \item \(ABCD\) is a tetrahedron. Let \(\overrightarrow{AB}=4\mathbf{i}+2\mathbf{j}+\mathbf{k}\), \(\overrightarrow{AC}=2\mathbf{i}-\mathbf{j}+2\mathbf{k}\),\\
+    \(\overrightarrow{AD}=s\mathbf{i}+(6t-2)\mathbf{j}+8t\mathbf{k}\), where \(s,t\in\mathbf{R}\).\\
+    It is given that \(\overrightarrow{AB}\cdot\overrightarrow{AC}=\overrightarrow{AC}\cdot\overrightarrow{AD}=\overrightarrow{AD}\cdot\overrightarrow{AB}=0\)
+    \begin{enumerate}
+        \item \begin{enumerate}[label=(\roman*)]
+            \item Find \(s\) in terms of \(t\).
+            \item Prove that \(\overrightarrow{DA}\cdot\overrightarrow{BC}=\overrightarrow{DB}\cdot\overrightarrow{AC}=\overrightarrow{DC}\cdot\overrightarrow{AB}=0\)
+        \end{enumerate}\qmarks{4}
+        \item Let \(H\) and \(K\) be the orthocentre of \(\triangle ABC\) and \(\triangle DBC\) respectively.
+        \begin{enumerate}[label=(\roman*)]
+            \item Prove that \(\overrightarrow{DH}\cdot\overrightarrow{BC}=\overrightarrow{DH}\cdot\overrightarrow{AB}=0\).\\
+            Hence, determine whether \(DH\) is the altitude from \(D\) to the plane \(ABC\). Explain your answer.
+            \item Prove that \(AK\) is the altitude from \(A\) to the plane \(BCD\).
+            \item It is given that \(DH\) and \(AK\) intersect at a point \(G\) inside the tetrahedron \(ABCD\). Prove that \(BG\) is perpendicular to the plane \(ACD\).
+        \end{enumerate}\qmarks{9}
+    \end{enumerate}
+\end{enumerate}
+\newpage
+
+\section{Vectors : Cross Products}
+\begin{enumerate}
+    \item Let \(\overrightarrow{OA}=2\mathbf{i}-2\mathbf{j}+\mathbf{k}\), \(\overrightarrow{OB}=\mathbf{i}+\mathbf{k}\), \(\overrightarrow{OC}=-\mathbf{i}+2\mathbf{j}+3\mathbf{k}\) and \(\overrightarrow{OG}=\overrightarrow{OA}+\overrightarrow{OB}+\overrightarrow{OC}\), where \(O\) is the origin. Denote the plane which contains \(O\), \(A\) and \(B\) by \(\varPi\).
+    \begin{enumerate}
+        \item Find \(\overrightarrow{OA}\times\overrightarrow{OB}\).
+        \item Let \(P\) be the projection of \(G\) on \(\varPi\). Find
+        \begin{enumerate}[label=(\roman*)]
+            \item \(\overrightarrow{OP}\),
+            \item the shortest distance from \(G\) to \(\varPi\).
+        \end{enumerate}\qmarks{8}
+    \end{enumerate}
+    
+    \item Let \(O\) be the origin and \(\mathbf{0}\) be the zero vector.
+    \begin{enumerate}
+        \item The position vectors of \(A\), \(B\) and \(C\) are \(\mathbf{a}\), \(\mathbf{b}\) and \(\mathbf{c}\) respectively, where \(\mathbf{a}\) and \(\mathbf{b}\) are non-zero non-parallel vectors. \(\lambda\) and \(\mu\) are two real numbers such that \(\lambda \mathbf{a}+\mu \mathbf{b}+\mathbf{c}=\mathbf{0}\).
+        \begin{enumerate}[label=(\roman*)]
+            \item Express \(\overrightarrow{CA}\) in terms of \(\mathbf{a}\), \(\mathbf{b}\), \(\lambda\) and \(\mu\).
+            \item If the points \(A\), \(B\) and \(C\) are collinear, prove that \(\lambda+\mu+1=0\).
+        \end{enumerate}\qmarks{3}
+        \item The position vectors of \(P\), \(Q\) and \(R\) are \(2\mathbf{i}-2\mathbf{k}\), \(22\mathbf{i}+20\mathbf{j}+8\mathbf{k}\) and\\
+        \(-46\mathbf{i}+24\mathbf{j}+46\mathbf{k}\) respectively. Denote the circumcenter of \(\triangle PQR\) by \(G\).
+        \begin{enumerate}[label=(\roman*)]
+            \item Find \(\overrightarrow{PQ} \times \overrightarrow{PQ}\) and the area of \(\triangle PQR\).
+            \item Someone claims \(\angle RPQ\) is a right-angle. Do you agree? Explain your answer.
+            \item The position vector of \(S\) is \(s(-11\mathbf{i}+22\mathbf{j}+26\mathbf{k})\) for some constants \(s \neq 0\).
+            \begin{enumerate}[label=(\arabic*)]
+                \item If \(\lambda \overrightarrow{OP}+\mu \overrightarrow{OS}+\overrightarrow{OG}=\mathbf{0}\), express \(\mu\) in terms of \(s\).
+                \item Find \(s\) if \(P\), \(S\) and \(G\) are collinear.
+            \end{enumerate}
+        \end{enumerate}
+    \end{enumerate}\qmarks{9}
+
+    \item \begin{enumerate}
+        \item Consider the system of linear equations in real variables \(x,\,y,\,z\)
+        \[
+        (*): \left\{
+        \begin{array}{ccccccc}
+             4x & + & y & - & z & = & 1 \\
+            2x & + & 2y & + & z & = & -13 \\
+            4x & -  & 3y  & - &  5z & = & 37
+        \end{array}
+        \right. \,.
+        \]
+        Solve (*) \qmarks{2}
+        \item Let \(O\) be the origin. The position vectors of \(A\), \(B\) and \(C\) are \(\mathbf{i}-9\mathbf{j}-6\mathrm{k}\), \(-11\mathbf{i}+9\mathbf{k}\) and \(17\mathbf{i}+7\mathbf{j}+2\mathbf{k}\). \(H\) is the orthocentre of \(\triangle ABC\).
+        \begin{enumerate}[label=(\roman*)]
+            \item Prove that the coordinates of \(H\) satisfy (*).
+            \item Describe the geometric relationship between \(\overrightarrow{BH}\) and \(\overrightarrow{BA}\times\overrightarrow{BC}\). Hence, find the coordinates of \(H\).
+            \item Let \(\displaystyle 0<x<\frac{\pi}{4}\). The coordinates of a point \(D\) are
+            \[(3+10\cos\theta-10\sin\theta, \,2+10\cos\theta+5\sin\theta,\,4+5\cos\theta+10\sin\theta).\]
+            \(E\) and \(F\) are points such that \(B\) and \(C\) are mid-points of \(DE\) and \(DF\) respectively. If \(E\), \(F\) and \(H\) are collinear, find \(\tan{2\theta}\).
+        \end{enumerate}\qmarks{10}
+    \end{enumerate}
+
+    \item Let \(O\) be the origin. The coordinates of \(A\), \(B\) and \(C\) are \((0,\,-1,\,5)\), \((2,\,0,\,2)\) and \((2,\,-1,\,1)\) respectively. Let \(D\) be a point lying on the straight line passing through \(B\) and \(C\) such that \(AD\) is perpendicular to \(BC\). Denote the circle passing through \(A\), \(C\) and \(D\) by \(\varGamma\).
+    \begin{enumerate}
+        \item By considering \(\overrightarrow{CD}\) as a scalar multiple of \(\overrightarrow{CB}\), find \(\overrightarrow{OD}\). \qmarks{4}
+        \item Let \(G\) be a circumcentre of \(\varGamma\). Find the coordinates of \(G\). \qmarks{2}
+        \item Let \(\varPi\) be the plane which contains \(\varGamma\). Denote the projection of point \(P(-4,\,-1,\,1)\) on \(\varPi\) by \(Q\).
+        \begin{enumerate}[label=(\roman*)]
+            \item Find the coordinates of \(Q\).
+            \item Someone claims that \(Q\) lies on \(\varGamma\). Do you agree? Explain your answer.
+        \end{enumerate}\qmarks{6}
+    \end{enumerate}
+
+    
+\end{enumerate}
+
+\newpage
+
+\part{Answers and Marking Scheme}
+\section{Mathematical Induction}
+\begin{enumerate}
+    \item \textbf{[Set 5 Q3]}
+    \begin{itemize}
+        \item For $n=1$, LHS = $\frac{1}{(1+2)1!} = \frac{1}{3}$, RHS = $\frac{1}{2} - \frac{1}{3!} = \frac{1}{2} - \frac{1}{6} = \frac{1}{3}$. True.
+        \item Assume $\sum_{k=1}^m \frac{1}{(k+2)k!} = \frac{1}{2} - \frac{1}{(m+2)!}$.
+        \item For $n=m+1$, $\sum_{k=1}^{m+1} = \frac{1}{2} - \frac{1}{(m+2)!} + \frac{1}{(m+3)(m+1)!} = \frac{1}{2} - \frac{1}{(m+1)!} \left[ \frac{1}{m+2} - \frac{1}{m+3} \right] = \frac{1}{2} - \frac{1}{(m+3)!}$.
+        \item By MI, true for all $n$.
+    \end{itemize}
+
+    \item \textbf{[Set 1 Q5]}
+    \begin{itemize}
+        \item (a) For $n=1$, LHS = $-1^2 = -1$, RHS = $(-1)^1 \frac{1(2)}{2} = -1$. True.
+        \item Assume $\sum_{r=1}^m (-1)^r r^2 = (-1)^m \frac{m(m+1)}{2}$.
+        \item For $n=m+1$, $\sum_{r=1}^{m+1} = (-1)^m \frac{m(m+1)}{2} + (-1)^{m+1}(m+1)^2 = (-1)^{m+1}(m+1) \left[ (m+1) - \frac{m}{2} \right] = (-1)^{m+1} \frac{(m+1)(m+2)}{2}$.
+        \item (b) $1001^2 - \dots - 2000^2 = \sum_{r=1}^{1000} (-1)^r r^2 - \sum_{r=1}^{2000} (-1)^r r^2 = \frac{1000(1001)}{2} - \frac{2000(2001)}{2} = 500500 - 2001000 = -1,500,500$.
+    \end{itemize}
+
+    \item \textbf{[Set 2 Q6]}
+    \begin{itemize}
+        \item (a) Proof by MI: $n=1$ yields $4=4$. Induction step uses $\frac{(-2)^{m+1}}{m+1} + \frac{(-1)^{m+2}(3m+4)2^{m+1}}{(m+1)(m+2)} = \frac{(-2)^{m+1}}{(m+1)(m+2)} [ (m+2) - (3m+4)/2 ] = \frac{(-2)^{m+2}}{m+2}$.
+        \item (b) Sum = $2^{-799} [ \sum_{r=1}^{999} \dots - \sum_{r=1}^{799} \dots ] = 2^{-799} [ \frac{(-2)^{1000}}{1000} - \frac{(-2)^{800}}{800} ] = \frac{2^{201}}{1000} - \frac{2}{800}$.
+    \end{itemize}
+
+    \item \textbf{[Set 3 Q5]}
+    \begin{itemize}
+        \item (a) Proof by MI: $n=1$ yields $1/21 = 1/21$.
+        \item (b) $\sum_{k=1}^{101} = \sum_{k=1}^{100} + \text{term}(101) = \frac{50}{3(203)} + \frac{102}{203 \cdot 205} = \frac{52}{615}$.
+    \end{itemize}
+
+    \item \textbf{[Set 4 Q3]}
+    \begin{itemize}
+        \item (a) Proof by MI: $n=1$ yields $1+8=9, 1^2(3)^2=9$.
+        \item (b) $\sum_{k=1}^{22} (2k-1)^3 = \sum_{k=1}^{44} k^3 - \sum_{k=1}^{22} (2k)^3 = \sum_{k=1}^{44} k^3 - 8 \sum_{k=1}^{22} k^3$. Using formula: $22^2(45)^2 - 8 \cdot \frac{22^2 \cdot 23^2}{4} = 484(2025 - 1058) = 468,012$.
+    \end{itemize}
+\end{enumerate}
+
+\section{Binomial Theorem}
+\begin{enumerate}
+    \item \textbf{[Set 1 Q2]}
+    \begin{itemize}
+        \item $(1+2x)^n(1-5x)^2 = (1 + 2nx + 2n(n-1)x^2 + \dots)(1 - 10x + 25x^2)$.
+        \item Coeff of $x^2$: $25 - 20n + 2n(n-1) = -31 \Rightarrow 2n^2 - 22n + 56 = 0 \Rightarrow n=4$ or $n=7$.
+    \end{itemize}
+
+    \item \textbf{[Set 2 Q2]}
+    \begin{itemize}
+        \item $(x-a)^6 (3 + x^{-2})^3 = (x^6 - 6ax^5 + 15a^2x^4 - 20a^3x^3 + 15a^4x^2 - \dots)(27 + 27x^{-2} + 9x^{-4} + x^{-6})$.
+        \item Coeff of $x^4$: $27(15a^2) + 9(1) = 2052 \Rightarrow 405a^2 = 2043 \Rightarrow a^2 = 5.044$ (Check: $15a^2 \cdot 27 + 9 = 2052 \Rightarrow 405a^2 = 2043 \Rightarrow a \approx 2.24$). 
+        \item Constant term: $9(15a^2) + 1(1) = 135a^2 + 1$.
+    \end{itemize}
+
+    \item \textbf{[Set 3 Q1]}
+    \begin{itemize}
+        \item Coeff of $x^7$ in $(1+ax)^2(2x - 1/2x)^5$: $(1+2ax+a^2x^2) \sum \binom{5}{r} (2x)^{5-r} (-1/2x)^r$.
+        \item Terms with $x^7$: $1 \cdot (\text{none}), 2ax \cdot (\text{none}), a^2x^2 \cdot \binom{5}{0}(2x)^5 = 32a^2x^7$.
+        \item $32a^2 = 800 \Rightarrow a^2 = 25 \Rightarrow a = \pm 5$.
+        \item Constant term: $2ax \cdot \binom{5}{2}(2x)^1(-1/2x)^2 = 2ax \cdot 10 \cdot 2x \cdot 1/4x^2 = 10a = \pm 50$.
+    \end{itemize}
+
+    \item \textbf{[Set 4 Q2]}
+    \begin{itemize}
+        \item (a) $(1-x^2)^n = 1 - nx^2 + \frac{n(n-1)}{2}x^4 - \dots$
+        \item (b) $(1-x^2)^n (x^2 - 6 + 9x^{-2})$. Coeff of $x^2$: $1(1) + (-n)(-6) + \frac{n(n-1)}{2}(9) = 301$.
+        \item $1 + 6n + 4.5n^2 - 4.5n = 301 \Rightarrow 4.5n^2 + 1.5n - 300 = 0 \Rightarrow 3n^2 + n - 200 = 0 \Rightarrow (3n + 25)(n - 8) = 0 \Rightarrow n=8$.
+    \end{itemize}
+
+    \item \textbf{[Set 5 Q2]}
+    \begin{itemize}
+        \item (a) $(1-ax)^6 = 1 - 6ax + 15a^2x^2 - 20a^3x^3 + \dots$
+        \item (b) $(1-ax)^6(1-x+3x^2)$. Coeff of $x^2$: $1(3) + (-6a)(-1) + 15a^2(1) = 75$.
+        \item $15a^2 + 6a - 72 = 0 \Rightarrow 5a^2 + 2a - 24 = 0 \Rightarrow (5a + 12)(a - 2) = 0 \Rightarrow a = 2$ or $-2.4$.
+    \end{itemize}
+\end{enumerate}
+
+\section{Trigonometry}
+\begin{enumerate}
+    \item \textbf{[Set 1 Q4]}
+    \begin{itemize}
+        \item (a) $\sin\theta(\sin 2\theta + \sin 4\theta) = \sin\theta(2\sin 3\theta \cos\theta) = (2\sin\theta \cos\theta)\sin 3\theta = \sin 2\theta \sin 3\theta$.
+        \item (b) $1/\sin x = 1/\sin 2x + 1/\sin 3x \Rightarrow \sin 2x \sin 3x = \sin x(\sin 2x + \sin 3x)$.
+        \item Using (a): $\sin x(\sin 2x + \sin 4x) = \sin x(\sin 2x + \sin 3x) \Rightarrow \sin 4x = \sin 3x$.
+        \item $4x = 3x$ (rej) or $4x = \pi - 3x \Rightarrow x = \pi/7$.
+    \end{itemize}
+
+    \item \textbf{[Set 4 Q4]}
+    \begin{itemize}
+        \item (a) $\frac{\sin(x+pi/4)}{\cos(x+pi/4)} + \dots = \frac{\sin(x+pi/4)\cos(x-pi/4) + \dots}{\cos(x+pi/4)\cos(x-pi/4)} = \frac{\sin 2x}{(\cos 2x + \cos(pi/2))/2} = 2\tan 2x$.
+        \item (b) $2\tan 2x = 2\sqrt{3} \Rightarrow \tan 2x = \sqrt{3} \Rightarrow 2x = \pi/3, 4\pi/3, \dots \Rightarrow x = \pi/6, 2\pi/3, 7\pi/6$. Range $[\pi/3, 4\pi/3] \Rightarrow x = 2\pi/3, 7\pi/6$.
+    \end{itemize}
+
+    \item \textbf{[Set 3 Q3]}
+    \begin{itemize}
+        \item (a) $\sin^2 3\theta - \sin^2 \theta = (\sin 3\theta - \sin \theta)(\sin 3\theta + \sin \theta) = (2\cos 2\theta \sin \theta)(2\sin 2\theta \cos \theta) = \sin 2\theta \sin 4\theta$.
+        \item (b) $\sin 4\theta \sin 2\theta = \cos 4\theta \cos 2\theta \Rightarrow \cos 6\theta = 0 \Rightarrow 6\theta = \pi/2, 3\pi/2, \dots$
+    \end{itemize}
+
+    \item \textbf{[Set 2 Q4]}
+    \begin{itemize}
+        \item (a) $\cot x - \tan x = \frac{\cos x}{\sin x} - \frac{\sin x}{\cos x} = \frac{\cos^2 x - \sin^2 x}{\sin x \cos x} = \frac{\cos 2x}{\frac{1}{2}\sin 2x} = 2\cot 2x$.
+        \item (b) $\cot \theta - \tan \theta = 2\cot 2\theta$. Equation: $2\cot 2\theta + 8\sqrt{3} = 2\tan 2\theta + 4\tan 4\theta \Rightarrow 4\cot 4\theta + 8\sqrt{3} = 4\tan 4\theta \Rightarrow 8\cot 8\theta = -8\sqrt{3} \Rightarrow \tan 8\theta = -1/\sqrt{3} \Rightarrow 8\theta = 5\pi/6 \Rightarrow \theta = 5\pi/48$.
+    \end{itemize}
+
+    \item \textbf{[Set 5 Q4]}
+    \begin{itemize}
+        \item (a)(i) $\cos^2 x + \cos^2 2x = \frac{1+\cos 2x}{2} + \frac{1+\cos 4x}{2} = 1 + \frac{\cos 2x + \cos 4x}{2} = 1 + \cos x \cos 3x$.
+        \item (b) $\cos^2 \theta/2 + \cos^2 \theta + \cos^2 3\theta/2 = 1 + 2\cos \theta/2 \cos \theta \cos 3\theta/2 = 1 \Rightarrow \cos \theta/2 \cos \theta \cos 3\theta/2 = 0$.
+        \item $\theta = \pi, \pi/2, \pi/3$. In range $[0, \pi/2]$, $\theta = \pi/2, \pi/3$.
+    \end{itemize}
+\end{enumerate}
+
+\section{First Principles}
+\begin{enumerate}
+    \item \textbf{[Set 1 Q1]}
+    \begin{itemize}
+        \item $f'(x) = \lim_{h \to 0} \frac{e^{-2(x+h)} - e^{-2x}}{h} = e^{-2x} \lim_{h \to 0} \frac{e^{-2h}-1}{h} = e^{-2x}(-2) = -2e^{-2x}$.
+    \end{itemize}
+
+    \item \textbf{[Set 2 Q5]}
+    \begin{itemize}
+        \item (a) $g(h) = e^h \cos(\frac{\pi+h}{2}) / e^0 - \cos(\pi/2) = -e^h \sin(h/2)$.
+        \item (b) $f'(\pi) = e^\pi \lim_{h \to 0} \frac{-e^h \sin(h/2)}{h} = e^\pi (-1/2) = -e^\pi/2$.
+    \end{itemize}
+
+    \item \textbf{[Set 3 Q2]}
+    \begin{itemize}
+        \item (a) $g(\pi/2+h) = \frac{\cos(\pi/2+h)}{\sqrt{4(\pi/2+h)^2 - 4\pi(\pi/2+h) + 2\pi^2}} = \frac{-\sin h}{\sqrt{\pi^2+4\pi h+4h^2 - 2\pi^2-4\pi h + 2\pi^2}} = \frac{-\sin h}{\sqrt{4h^2+\pi^2}}$.
+        \item (b) $g'(\pi/2) = \lim_{h \to 0} \frac{-\sin h / \sqrt{4h^2+\pi^2} - 0}{h} = -1/\pi$.
+    \end{itemize}
+
+    \item \textbf{[Set 4 Q1]}
+    \begin{itemize}
+        \item $f'(\pi/2k) = \lim_{h \to 0} \frac{\cos(k(\pi/2k+h)) - 0}{h} = \lim \frac{-\sin kh}{h} = -k$.
+    \end{itemize}
+
+    \item \textbf{[Set 5 Q1]}
+    \begin{itemize}
+        \item $f'(\pi/k) = \lim_{h \to 0} \frac{\sin(k(\pi/k+h))/k^2 - 0}{h} = \lim \frac{-\sin kh}{k^2 h} = -1/k$.
+    \end{itemize}
+\end{enumerate}
+
+\section{Differentiation and Tangents}
+\begin{enumerate}
+    \item \textbf{[Set 2 Q7]}
+    \begin{itemize}
+        \item (a) $4x - 4y - 4x y' + 10y y' = 0 \Rightarrow y' = \frac{4y-4x}{10y-4x} = \frac{2y-2x}{5y-2x}$.
+        \item (b) Let tangent point be $(x_0, y_0)$. $\frac{y_0+4}{x_0+3} = \frac{2y_0-2x_0}{5y_0-2x_0}$. Solve with $2x_0^2 - 4x_0y_0 + 5y_0^2 = 30$.
+    \end{itemize}
+\end{enumerate}
+
+\section{Curve Sketching}
+\begin{enumerate}
+    \item \textbf{[Set 1 Q10]}
+    \begin{itemize}
+        \item $f(x) = -x + 3 - \frac{2}{2x+1}$. $f'(x) = -1 + \frac{4}{(2x+1)^2}$. $f''(x) = \frac{-16}{(2x+1)^3}$.
+        \item (a) Concave up: $f''(x) > 0 \Rightarrow 2x+1 < 0 \Rightarrow x < -1/2$.
+        \item (b) VA: $x = -1/2$. OA: $y = -x + 3$.
+    \end{itemize}
+
+    \item \textbf{[Set 3 Q4]}
+    \begin{itemize}
+        \item (a) $f'(x) = \frac{2x-2}{x^2-2x+5}$, $f''(x) = \frac{2(x^2-2x+5) - (2x-2)^2}{(x^2-2x+5)^2} = \frac{-2x^2+4x+6}{(\dots)^2}$.
+        \item (b) Concave up: $-2x^2+4x+6 > 0 \Rightarrow x^2-2x-3 < 0 \Rightarrow -1 < x < 3$.
+        \item (c) Points of inflection at $x=-1, 3$. Agree.
+    \end{itemize}
+
+    \item \textbf{[Set 1 Q13]}
+    \begin{itemize}
+        \item $f'(x) = (2x-x^4)e^{-x^3/3}$, $f''(x) = (x^6-6x^3+2)e^{-x^3/3}$.
+        \item Max at $x=2^{1/3}$, Min at $x=0$.
+    \end{itemize}
+
+    \item \textbf{[Set 2 Q10]}
+    \begin{itemize}
+        \item (a) OA: $y = x + 1$. VA: None ($3x^2+4x+2 > 0$).
+        \item (b) $h(x) = x$.
+    \end{itemize}
+
+    \item \textbf{[Set 3 Q9]}
+    \begin{itemize}
+        \item (a) VA: $x=3$. OA: $y = x+2$.
+        \item (b) $f'(x) = \frac{(2x-1)(x-3) - (x^2-x-2)}{(x-3)^2} = \frac{x^2-6x+5}{(x-3)^2}$. Max at $(1, 1)$, Min at $(5, 9)$.
+    \end{itemize}
+
+    \item \textbf{[Set 4 Q9]}
+    \begin{itemize}
+        \item (a) VA: $x=-1$. OA: $y = x-5$.
+        \item (b) $r'(x) = \frac{x^2+2x}{(x+1)^2}$. Max at $(0, -4)$, Min at $(-2, -8)$.
+    \end{itemize}
+\end{enumerate}
+
+\section{Rate of Change}
+\begin{enumerate}
+    \item \textbf{[Set 1 Q11]}
+    \begin{itemize}
+        \item Area $A = \frac{1}{2} |x(y-5) - y(x-5)| = \frac{1}{2} |5y - 5x| = 2.5(y-x)$.
+        \item $dA/dt = 2.5(y' - x') = 566$. $y^2 = x^2+100 \Rightarrow yy' = xx'$.
+        \item At $x=24, y=26, 26y' = 24x'$. Solve for $x'$.
+    \end{itemize}
+
+    \item \textbf{[Set 2 Q8]}
+    \begin{itemize}
+        \item $OA = 17\cos\theta + 113\cos\phi$. Also $17\sin\theta = 113\sin\phi$.
+        \item Diff wrt $t$: $d(OA)/dt = -17\sin\theta \theta' - 113\sin\phi \phi' = -0.125$.
+        \item $17\cos\theta \theta' = 113\cos\phi \phi'$. Substitute to find $\theta' + \phi'$.
+    \end{itemize}
+
+    \item \textbf{[Set 5 Q11]}
+    \begin{itemize}
+        \item $V = V_{water} + \pi(1)^2 z$. $dV/dt = 0 + \pi z'$.
+    \end{itemize}
+
+    \item \textbf{[Set 1 Q12]}
+    \begin{itemize}
+        \item $V = \frac{\pi}{\ln a} [(h+1)\ln(h+1) - h]$.
+        \item (i) Method I: $h=2$, $dV/dt = \frac{\partial V}{\partial a} \frac{da}{dt}$.
+        \item (ii) Method II: $a=3$, $dV/dt = \frac{\partial V}{\partial h} \frac{dh}{dt}$.
+    \end{itemize}
+\end{enumerate}
+
+\section{Matrices}
+\begin{enumerate}
+    \item \textbf{[Set 1 Q9]}
+    \begin{itemize}
+        \item (a) $A^2 = \begin{pmatrix} 3 & -3 \\ 3 & 0 \end{pmatrix}, A^6 = (A^2)^3 = -27I$. $A^{-1}BA = \begin{pmatrix} 3 & 2 \\ 0 & 5 \end{pmatrix}$.
+        \item (b) $B^n = A \begin{pmatrix} 3^n & \dots \\ 0 & 5^n \end{pmatrix} A^{-1}$.
+    \end{itemize}
+
+    \item \textbf{[Set 2 Q11]}
+    \begin{itemize}
+        \item (a) $\alpha = \frac{5^n - (-3)^n}{8}, \beta = \frac{3 \cdot 5^n + 5 \cdot (-3)^n}{8}$.
+        \item (b) $A^2 - 2A - 15I = 0 \Rightarrow A^n = \alpha A + \beta I$.
+    \end{itemize}
+
+    \item \textbf{[Set 4 Q10]}
+    \begin{itemize}
+        \item (a) $\lambda = 5, 7$.
+        \item (c) $A^{666} = P \begin{pmatrix} 7^{666} & 0 \\ 0 & 5^{666} \end{pmatrix} P^{-1}$.
+    \end{itemize}
+
+    \item \textbf{[Set 5 Q10]}
+    \begin{itemize}
+        \item (a) $N = \begin{pmatrix} 0 & 1 \\ 0 & 0 \end{pmatrix} \Rightarrow N^2 = 0$. $J^n = (\lambda I + N)^n = \lambda^n I + n\lambda^{n-1}N$.
+        \item (b) $\mu = 4$. $A^n = Q P^n Q^{-1}$.
+    \end{itemize}
+
+    \item \textbf{[Set 3 Q12]}
+    \begin{itemize}
+        \item Standard rotation matrix properties. Induction for $A(n\theta)$.
+    \end{itemize}
+\end{enumerate}
+
+\section{System of Linear Equations}
+\begin{enumerate}
+    \item \textbf{[Set 1 Q8]}
+    \begin{itemize}
+        \item $a=2/3, b=1/2$. Solution: $(x, y, z) = (\frac{1+3t}{2}, \frac{1-13t}{2}, t)$.
+    \end{itemize}
+
+    \item \textbf{[Set 2 Q9]}
+    \begin{itemize}
+        \item $k=1$ or $k=2$. For $k=2$, $a=2$.
+    \end{itemize}
+
+    \item \textbf{[Set 3 Q8]}
+    \begin{itemize}
+        \item Unique if $\Delta \neq 0 \Rightarrow a \neq -3, -4$.
+    \end{itemize}
+
+    \item \textbf{[Set 5 Q8]}
+    \begin{itemize}
+        \item $\lambda = -3, 3, 4$.
+    \end{itemize}
+
+    \item \textbf{[Set 4 Q8]}
+    \begin{itemize}
+        \item $\lambda \neq 4$ for unique solution. $x = 2$.
+    \end{itemize}
+\end{enumerate}
+
+\section{Vectors : Dot Products}
+\begin{enumerate}
+    \item \textbf{[Set 1 Q3]}
+    \begin{itemize}
+        \item (a) $\vec{OP} = \frac{r(2/5 \mathbf{a}) + \mathbf{b}}{r+1}$.
+        \item (b) Collinear with midpoint $\Rightarrow 2r/5(r+1) = 1/(r+1) \Rightarrow r = 2.5$.
+    \end{itemize}
+
+    \item \textbf{[Set 1 Q3 (Cont.)]}
+    \begin{itemize}
+        \item Angle bisector $\Rightarrow \frac{\vec{OA} \cdot \vec{OB}}{|\vec{OA}|} = \frac{\vec{OC} \cdot \vec{OB}}{|\vec{OC}|}$.
+    \end{itemize}
+
+    \item \textbf{[Set 4 Q12]}
+    \begin{itemize}
+        \item $\vec{DH} = \mathbf{a}+\mathbf{b}+\mathbf{c}$ (Euler line).
+    \end{itemize}
+
+    \item \textbf{[Set 5 Q12]}
+    \begin{itemize}
+        \item Orthogonality relations in tetrahedron.
+    \end{itemize}
+\end{enumerate}
+
+\section{Vectors : Cross Products}
+\begin{enumerate}
+    \item \textbf{[Set 5 Q7]}
+    \begin{itemize}
+        \item (a) $\vec{OA} \times \vec{OB} = (-2, -1, 2)$.
+        \item (b) Distance = $|\vec{OG} \cdot \mathbf{n}|/|\mathbf{n}|$.
+    \end{itemize}
+
+    \item \textbf{[Set 4 Q11]}
+    \begin{itemize}
+        \item Collinear $\Rightarrow \vec{AB} \times \vec{AC} = 0$.
+    \end{itemize}
+
+    \item \textbf{[Set 2 Q13]}
+    \begin{itemize}
+        \item Solve system (*) for $H$.
+    \end{itemize}
+
+    \item \textbf{[Set 3 Q11]}
+    \begin{itemize}
+        \item Circle through $A, C, D$. $G$ is circumcenter.
+    \end{itemize}
+\end{enumerate}
+
+\end{document}
